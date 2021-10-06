@@ -27,3 +27,21 @@ body{
     color: #1f1f1f;
     box-shadow: -4px -4px 10px rgba(255,255,255,1), inset 4px 4px 10px rgba(0,0,0,0.5), inset -4px -4px 10px rgba(255,255,255,1), 4px 4px 10px rgba(0,0,0,0.5);
 }
+
+.container p{
+    display: none;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    font: 18px;
+    color: #1f1f1f;
+    cursor: pointer;
+}
+
+.container span{
+    font-size: 15px;
+    position: absolute;
+    top: 40%;
+    right: -6%;
+    cursor: pointer;
+}
