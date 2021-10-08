@@ -14,3 +14,31 @@ window.onload = function loadPassword(){
     }
     randomPassword.innerHTML = passwordVal;
 }
+
+password.addEventListener('focus', function(){
+    if(password.value == ''){
+        randomPassword.style = 'display:block';
+    }
+})
+
+randomPassword.addEventListener("click", function(){
+    password.value = passwordVal;
+    randomPassword.style='display:none';
+})
+
+//Show and Hide Password
+var state = false;
+function toggle(){
+    if(state){
+        password.setAttribute("type","password");
+        state = false;
+    }
+    else{
+        password.setAttribute("type","text");
+        state = true;
+    }
+}
+
+function myFunction(show){
+    show.classList.toggle("fa-eye-slash");
+}
